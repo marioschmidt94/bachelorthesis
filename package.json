@@ -1,0 +1,19 @@
+{
+  "name": "nodeserver",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marioschmidt94/bachelorthesis.git"
+  },
+  "author": "Mario Schmidt",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/marioschmidt94/bachelorthesis/issues"
+  },
+  "homepage": "https://github.com/marioschmidt94/bachelorthesis#readme"
+}

@@ -3,6 +3,9 @@ var router = express.Router();
 
 // Get Main Page
 router.get('/', ensureAuthenticated, function(req, res){
+
+  // TO DO: VIDEOS ANZEIGEN
+
   res.status(200).render('index');
 });
 

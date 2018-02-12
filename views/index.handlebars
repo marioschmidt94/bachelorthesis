@@ -1,2 +1,17 @@
 <h2 class="page-header">Dashboard</h2>
 <p>Hallo {{user.firstname}} {{user.name}} !</p>
+
+<div class="jumbotron">
+    <h1 class="display-3">Meine Videos</h1>
+    <ul>
+      {{#each user.videos}}
+      <li>{{this.videourl}}</li>
+      {{/each}}
+    </ul>
+    <p><a class="btn btn-lg btn-success" href="/videos/upload" role="button">Video hinzufügen</a></p>
+</div>
+
+<div class="jumbotron">
+    <h1 class="display-3">Meine Gruppen</h1>
+    <p><a class="btn btn-lg btn-success" href="/groups/create" role="button">Gruppe erstellen</a></p>
+</div>

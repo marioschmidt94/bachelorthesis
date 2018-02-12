@@ -6,8 +6,6 @@
 
 1. Repository herunterladen
 2. Module installieren mit *npm install*
-3. MongoDB starten
-4. Server starten mit
-  1. npm start
-  2. nodemon start
+3. MongoDB starten über *mongod*
+4. Server starten über *npm start* oder *nodemon start*
 5. Abruf über Browser unter http://localhost:3000

@@ -1,1 +1,19 @@
-UPLOAD VIDEO
+<h2 class="page-header">Video hinzufügen</h2>
+{{#if errors}}
+    {{#each errors}}
+        <div class="alert alert-danger">{{msg}}</div>
+    {{/each}}
+{{/if}}
+<form method="post" action="/videos/upload">
+    <div class="form-group">
+        <input type="text" class="form-control" placeholder="Name des Videos" name="videoname">
+    </div>
+    <div class="form-group">
+        <input type="url" class="form-control" placeholder="YouTube URL" name="videourl">
+    </div>
+    <div class="form-group">
+        <p>Video enthält Alphakanal</p>
+        <input type="checkbox" class="form-control" name="videourl">
+    </div>
+    <button type="submit" class="btn btn-default">Bestätigen</button>
+</form>

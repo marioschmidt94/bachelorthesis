@@ -1,1 +1,53 @@
-MAIN LAYOUT
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <title>Login</title>
+        <link rel="stylesheet" href="/css/bootstrap.css" />
+        <link rel="stylesheet" href="/css/style.css" />
+    </head>
+    <body>
+        <div class="container">
+            <header class="header clearfix">
+                <nav>
+                    <ul class="nav nav-pills float-right">
+                        <li class="nav-item"><a class="nav-link" href="/users/anleitung">Anleitung</a></li>
+                        {{#if user}}
+                        <li class="nav-item"><a class="nav-link" href="/">Dashboard</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/users/logout">Ausloggen</a></li>
+                        {{else}}
+                        <li class="nav-item"><a class="nav-link" href="/users/login">Anmelden</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/users/register">Registrieren</a></li>
+                        {{/if}}
+                    </ul>
+                </nav>
+                <h3 class="text-muted">Superhuman Messages</h3>
+            </header>
+
+            <main role="main">
+                <div class="row">
+                    <div class="col-lg-12">
+                        {{#if success_msg}}
+                        <div class="alert alert-success">{{success_msg}}</div>
+                        {{/if}}
+
+                        {{#if error_msg}}
+                        <div class="alert alert-danger">{{error_msg}}</div>
+                        {{/if}}
+
+                        {{#if error}}
+                        <div class="alert alert-danger">{{error}}</div>
+                        {{/if}}
+
+                        {{{body}}}
+                    </div>
+                </div>
+
+            </main>
+
+            <footer class="footer">
+                <p>&copy; TH Köln 2018</p>
+            </footer>
+
+        </div> <!-- /container -->
+    </body>
+</html>

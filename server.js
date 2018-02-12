@@ -19,6 +19,7 @@ var routes = require('./routes/index');
 var users = require('./routes/users');
 var videos = require('./routes/videos');
 var groups = require('./routes/groups');
+var howtos = require('./routes/howtos');
 
 // Server initialisieren
 var app = express();
@@ -80,6 +81,7 @@ app.use('/', routes);
 app.use('/users', users);
 app.use('/videos', videos);
 app.use('/groups', groups);
+app.use('/howtos', howtos);
 
 // Port
 app.set('port', (process.env.PORT || 3000));

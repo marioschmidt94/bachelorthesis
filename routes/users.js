@@ -61,9 +61,9 @@ router.get('/login', function(req, res){
 
 // POST Einloggen
 router.post('/login',
-  passport.authenticate('local', {successRedirect: '/', failureRedicrect:'login', failureFlash: true}),
+  passport.authenticate('local', {successRedirect: '/', failureRedirect:'login', failureFlash: true}),
   function(res,res){
-    res.status(200).redirect('/');
+    res.redirect('/');
 });
 
 // GET Ausloggen

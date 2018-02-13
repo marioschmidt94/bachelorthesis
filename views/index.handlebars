@@ -3,9 +3,9 @@
 
 <div class="jumbotron">
     <h1 class="display-3">Meine Videos</h1>
-    <ul>
-      {{#each user.videos}}
-      <li>{{this.videourl}}</li>
+    <ul class="list-group">
+      {{#each currentUser.videos}}
+      <li class="list-group-item"> <h4> Videoname: {{videoname}}</h4> </br> <video width="320" height="240" controls><source src="{{videourl}}" type="video/mp4"></video> </li>
       {{/each}}
     </ul>
     <p><a class="btn btn-lg btn-success" href="/videos/upload" role="button">Video hinzufügen</a></p>

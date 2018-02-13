@@ -38,7 +38,7 @@ router.post('/upload', function(req,res){
 
     Video.createVideo(newVideo, function(err, video){
           if(err) throw err;
-          console.log(newVideo);
+          console.log('Video uploaded successfully!');
     });
 
 

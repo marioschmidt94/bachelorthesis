@@ -20,3 +20,7 @@ var Video = module.exports = mongoose.model('Video', VideoSchema);
 module.exports.createVideo = function(newVideo, callback){
   newVideo.save(callback);
 };
+
+module.exports.getVideoById = function(id, callback){
+  Video.findById(id, callback);
+};

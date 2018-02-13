@@ -54,3 +54,15 @@ module.exports.comparePassword = function(candidatePassword, hash, callback){
     callback(null, isMatch);
   });
 };
+
+module.exports.retrieveVideos = function(username, done){
+  User.findOne({username:username})
+      .populate('videos')
+      .exec(function(err, users){
+        if (err) {
+          return done(err, null);
+        } else {
+          return done(null, users);
+        }
+      });
+};

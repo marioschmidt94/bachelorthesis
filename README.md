@@ -1,6 +1,7 @@
 # Bachelorarbeit - Implementationsdokumentation
 
 Repository für den Webserver verfügbar unter https://github.com/marioschmidt94/bachelorthesis
+Der Webserver ist verfügbar unter http://lwivs16.gm.fh-koeln.de:3000
 
 ## Voraussetzungen Software
 ### Android App
@@ -19,11 +20,13 @@ Repository für den Webserver verfügbar unter https://github.com/marioschmidt94
 
 ## Installationsanleitung
 
+Die mobile Applikation befindet sich im Ordner: ``bachelorarbeit``
+Der Webserver befindet sich im Ordner: ``bachelorthesis``
+
 **Die Verbindung kann zum Webserver kann auschließlich aus dem Netz der TH Köln erfolgen.**
 
 Zum Testen der mobilen Applikation die FinalBuild.apk auf einem Testgerät installieren, Testgerät muss sich im Netz der TH Köln befinden. 
-Webserver ist erreichbar unter: http://lwivs16.gm.fh-koeln.de:3000
-Zum Öffnen des Projektes, den Ordner ``bachelorarbeit`` öffnen oder alternativ die ``.unitypackage`` importieren.
+Das Projekt muss als Asset importiert werden. Dazu unter ``Assets``->``Import Package``->``CustomPackage`` die Datei ``bachelorthesis.unitypackage`` hinzufügen und alle Abhängigkeiten installieren. Anschließend die Szenen in numerischer Reihenfolge hinzufügen (mit Scene 01-LoginScene beginnen, die Scene 00-Splash Screen kann ignoriert werden). 
 
 
 Folgende Schritte bei der lokalen Installation des Webservers einhalten:

@@ -9,7 +9,17 @@ router.get('/', ensureAuthenticated, function(req, res){
   var user = req.user;
   User.retrieveVideos(user.username, function(err, currentUser){
     if (err) throw err;
-    res.status(200).render('index', {currentUser});
+    var videodata = currentUser.videos;
+//    res.setHeader('content-type', 'application/json');
+    res.status(200).render('index',  {videodata});
+  });
+});
+
+router.get('/testing', function(req, res){
+  var user = req.user;
+  User.retrieveVideos(user.username, function(err, currentUser){
+    if (err) throw err;
+    res.send({currentUser});
   });
 });
 

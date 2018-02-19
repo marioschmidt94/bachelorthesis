@@ -4,7 +4,7 @@
 <div class="jumbotron">
     <h1 class="display-3">Meine Videos</h1>
     <ul class="list-group">
-      {{#each currentUser.videos}}
+      {{#each videodata}}
       <li class="list-group-item"> <h4> Videoname: {{videoname}}</h4> </br> <video width="320" height="240" controls><source src="{{videourl}}" type="video/mp4"></video> </li>
       {{/each}}
     </ul>
@@ -15,3 +15,4 @@
     <h1 class="display-3">Meine Gruppen</h1>
     <p><a class="btn btn-lg btn-success" href="/groups/create" role="button">Gruppe erstellen</a></p>
 </div>
+<div style="display:none;">{{#each videodata}}"videourl":"{{videourl}}"{{/each}}</div>

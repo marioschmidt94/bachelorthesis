@@ -29,3 +29,15 @@ Folgende Schritte bei der lokalen Installation des Webservers einhalten:
 4. Server starten über ``npm start`` oder ``nodemon start``
 5. Abruf des Servers unter http://localhost:3000
 
+## Informationen zur Architektur
+### Android App
+
+### Webserver
+* Import aller Module und Routen in [app.js](app.js)
+* Routen befinden sich im Ordner [routes](routes)
+  * In [users.js](/routes/users.js) wird Anmeldung, Registration und Abmeldung vollzogen
+  * In [videos.js](/routes/videos.js) wird das Hochladen der Videolinks adressiert
+* Datenbankmodelle, sowie Funktionen sind im Ordner [models](models) zu finden
+* [public](public) enthält stylesheets und Bootstrap Funktionen
+* Layouts sind im Ordner [views](views) zu finden
+

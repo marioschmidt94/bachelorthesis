@@ -14,7 +14,8 @@ router.post('/upload', function(req,res){
   var currentUser = req.user;
   var videoname   = req.body.videoname;
   var videourl    = req.body.videourl;
-  var alpha       = req.body.alpha;
+  //var alpha       = req.body.alpha;
+  var alpha = req.body.alpha ? true : false;
 
   req.checkBody('videoname', 'Bitte einen Namen für das Video eingeben.').notEmpty();
   req.checkBody('videoname', 'Bitte eine Adresse für das Video eingeben.').notEmpty();
@@ -28,7 +29,9 @@ router.post('/upload', function(req,res){
       errors:errors
     });
   } else {
-    // TO DO: URL AUTOMATISCH ÄNDERN
+
+    // Video URL bearbeiten
+    videourl = videourl.replace('?dl=0', '').replace('www', 'dl');
 
     var newVideo = new Video({
       videoname: videoname,

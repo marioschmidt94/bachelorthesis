@@ -53,8 +53,6 @@ Um die Initialisierung des Vuforia Frameworks zu Beginn jeder einzelnen Szene zu
 
 Das Wechseln einer Szene, das Schließen der Applikation, das Anzeigen und Verstecken von Elementen und das Öffnen einer Website erfolgen über den ``InputManager``
 
-Die Szenen müssen in nummerierter Reihenfolge in den BuildSettings hinzugefügt werden, wobei die erste Szene die LoginSzene ist.
-
 ### Webserver
 * Import aller Module und Routen in [app.js](app.js)
 * Routen befinden sich im Ordner [routes](routes)

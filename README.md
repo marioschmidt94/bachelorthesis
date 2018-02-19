@@ -21,8 +21,10 @@ Repository für den Webserver verfügbar unter https://github.com/marioschmidt94
 
 **Die Verbindung kann zum Webserver kann auschließlich aus dem Netz der TH Köln erfolgen.**
 
-Zum Testen der mobilen Applikation die FinalBuild.apk auf einem Testgerät installieren, Testgerät muss sich im Netz der TH Köln befinden.
+Zum Testen der mobilen Applikation die FinalBuild.apk auf einem Testgerät installieren, Testgerät muss sich im Netz der TH Köln befinden. 
 Webserver ist erreichbar unter: http://lwivs16.gm.fh-koeln.de:3000
+Zum Öffnen des Projektes, den Ordner ``bachelorthesis`` öffnen oder alternativ die ``.unitypackage`` importieren.
+
 
 Folgende Schritte bei der lokalen Installation des Webservers einhalten:
 1. Repository importieren

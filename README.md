@@ -38,9 +38,7 @@ Um das Video mit Hilfe der Controller bewegen zu können wurden die folgenden be
 * ButtonEvents
 * Touchgesten werden mit Hilfe des LeanTouch Assets adressiert
 
-Um auf die Cloud Recognition Funktionen zurückgreifen zu können werden die folgenden beiden Skripte aus der Vuforia Dokumentation übernommen:
-* CloudHandler
-* VideoController
+Um auf die Cloud Recognition Funktionen zurückgreifen zu können werden der ``CloudHandler`` und der ``VideoController`` aus der Vuforia Dokumentation übernommen. 
 
 Die Interaktion mit dem Webserver findet über den ``ServerController`` statt. Der ``ServerController`` enthält Post Methoden für die Registrierung und Anmeldung beim Webserver.
 

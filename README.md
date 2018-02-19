@@ -42,7 +42,7 @@ Um auf die Cloud Recognition Funktionen zurückgreifen zu können werden der ``C
 
 Die Interaktion mit dem Webserver findet über den ``ServerController`` statt. Der ``ServerController`` enthält Post Methoden für die Registrierung und Anmeldung beim Webserver.
 
-Beim Zugriff auf den Webserver werden alle VideoURLs des Benutzers in einer Array Liste gespeichert. Vom ``VideoManager`` wird auf diese Array Liste zugegriffen. Die ``ChangeVideo`` Funktion wird über einen Button aufgerufen, wodurch über die Array Liste iteriert werden kann.
+Beim Zugriff auf den Webserver werden alle VideoURLs des Benutzers in einer Array Liste gespeichert. Vom ``VideoManager`` wird auf diese Array Liste zugegriffen. Die ``ChangeVideo()`` Funktion wird über einen Button aufgerufen, wodurch über die Array Liste iteriert werden kann.
 
 Um die Initialisierung des Vuforia Frameworks zu Beginn jeder einzelnen Szene zu verhindern, wird der Aufruf der Vuforia Funktionalitäten im ``NoARPlease`` Skript verhindert. 
 

@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="de">
+	<head>
+		<meta charset="utf-8">
+
+		<title>Kolloquium</title>
+
+		<meta name="description" content="Präsentation für das Kolloquium am 27.02.2018">
+		<meta name="author" content="Mario Schmidt">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/medieninformatik.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+                
+                
+                <!-- Titelseite -->
+				<section>
+                    <h1>Kolloquium</h1>
+                    <h2 class="u" style="margin-top: 5%">Entwicklung einer Augmented Reality App zur Videoprojektion unter Berücksichtigung menschzentrierter Gestaltungskonzepte</h2>
+                    <p style="margin-top: 15%">Mario Schmidt</p>
+                    <p>27.02.2018</p>
+                </section>
+
+                
+                <!-- Projektidee -->  
+                <section>
+                    <section class="_center invers">
+                        <h2>Projektidee</h2>
+                    </section>
+                    <section data-background-color="#dd1166" class="_center invers">
+                        <h2>Videos von Personen auf oder hinter einem Horizont darstellen</h2>
+                    </section>
+                    <section data-background="https://media.giphy.com/media/oVtulMMXo36dfoxChp/giphy.gif" class="future" data-background-image="https://media.giphy.com/media/oVtulMMXo36dfoxChp/giphy.gif" style="top: 280px; display: block;">
+				    </section>
+                </section>
+                
+                <!-- Menschzentrierte Gestaltung -->
+				<section>
+                    <section class="_center invers">
+                        <h2>Menschzentrierte Gestaltungskonzepte</h2>
+                    </section>
+                    <section>
+                        <h2 class="u">Verschiedene Vorgehensmodelle</h2>
+                        <ul>
+                            <li>Usability Engineering</li>
+                            <li>Usability Engineering Lifecycle</li>
+                            <li>Reverse Usability Engineering</li>
+                            <li>DIN EN ISO 9241-210</li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h2 class="u">DIN EN ISO 9241-210</h2>
+                    </section>
+                </section>
+                
+                <!-- Nutzungskontextanalyse -->
+                <section>
+                    <section class="_center invers">
+                        <h2>Analyse des Systems</h2>
+                    </section>
+                    <section>
+                        <h2 class="u">Benutzer und Umgebung</h2>
+                    </section>
+                    <section>
+                        <h2 class="u">Evaluation</h2>
+                    </section>
+                    <section>
+                        <h2 class="u">Anforderungen</h2>
+                    </section>                    
+                </section>
+                
+                <!-- Konzeption -->
+                <section>
+                    <section class="_center invers">
+                        <h2>Konzeption</h2>
+                    </section>
+                    <section>
+                        Prototypen
+                    </section>
+                    <section>
+                        Kommunikation
+                    </section> 
+                </section>
+                
+                <!-- Realisierung -->
+                <section>
+                    <section class="_center invers">
+                        <h2>Realisierung</h2>
+                    </section>
+                    <section>
+                        Webserver
+                    </section>
+                    <section>
+                        Mobile App
+                    </section>
+                </section>
+                
+                <!-- Live Demo -->
+                <section>
+                    <section class="_center invers">
+                        <h2>Live Demo</h2>
+                    </section>
+                    <section>
+                        Alternatives Video
+                    </section>
+                </section>
+                
+                <!-- Ergebnisse -->
+                <section>
+                    <section class="_center invers">
+                        <h2>Ergebnisse</h2>
+                    </section>
+                    <section>
+                        <h2 class="u">Zusammenfassung</h2>
+                    </section>
+                </section>
+                                
+                <!-- Ende -->
+                <section class="_center invers">  
+                    <h2>Vielen Dank für Ihre Aufmerksamkeit.</h2>
+                </section>
+
+
+                
+                
+                
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: false,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/search/search.js', async: true },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>

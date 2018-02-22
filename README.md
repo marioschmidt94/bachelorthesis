@@ -3,6 +3,9 @@
 Repository für den Webserver verfügbar unter https://github.com/marioschmidt94/bachelorthesis <br>
 Der Webserver ist verfügbar unter http://lwivs16.gm.fh-koeln.de:3000
 
+[Präsentation für das Kolloquium](Kolloquium/index.html)
+
+
 ## Voraussetzungen Software
 ### Android App
 * Unity3d _Version: 2017.2.0f3_ verwendet unter macOS High Sierra Version 10.13.2
